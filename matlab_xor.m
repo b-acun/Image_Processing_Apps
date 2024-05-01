@@ -1,0 +1,10 @@
+I1 = imread('toycars1.png');
+I2 = imread('toycars2.png');
+I1sb = im2bw(I1);
+I2sb = im2bw(I2);
+subplot(3,2,1), imshow(I1);
+subplot(3,2,2), imshow(I1sb);
+subplot(3,2,3), imshow(I2);
+subplot(3,2,4), imshow(I2sb);
+Isonuc1 = xor(I1sb, I2sb);
+subplot(3,2,5), imshow(Isonuc1);
